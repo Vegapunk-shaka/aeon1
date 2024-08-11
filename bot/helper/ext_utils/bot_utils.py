@@ -248,7 +248,7 @@ def source(self):
 
 
 def get_readable_message():
-    msg = "<b>Powered by Aeon</b>\n\n"
+    msg = '<blockquote><b>🅥🅔🅖🅐🅟🅤🅝🅚</b></blockquote>\n\n'
     button = None
     tasks = len(download_dict)
     currentTime = get_readable_time(time() - botStartTime)
@@ -263,8 +263,8 @@ def get_readable_message():
     for download in list(download_dict.values())[
         STATUS_START : STATUS_LIMIT + STATUS_START
     ]:
-        msg += f"<b>{download.status()}:</b> {escape(f'{download.name()}')}\n"
-        msg += f"by {source(download)}\n"
+        msg +=f"<b>{download.status()}:𝖳𝖺𝗌𝗄𝗌 𝖡𝗒 {source(download)}\n"
+        
         if download.status() not in [
             MirrorStatus.STATUS_SPLITTING,
             MirrorStatus.STATUS_SEEDING,
