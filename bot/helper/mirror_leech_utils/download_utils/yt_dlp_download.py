@@ -82,7 +82,6 @@ class YoutubeDLHelper:
                 "file_access": lambda n: 3,
                 "extractor": lambda n: 3,
             },
-            "concurrent_fragment_downloads": 8,
         }
 
     @property
